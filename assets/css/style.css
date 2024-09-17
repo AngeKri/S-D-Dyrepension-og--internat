@@ -1,13 +1,37 @@
-/* FONT GOES HERE */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+/* font-family: "Outfit", sans-serif; */
+/* font-family: "Source Sans 3", sans-serif; */
 
-
-
+/* Variabler */
+:root{
+    --Primary-100: #FFDE47;
+    --Primary-75: #FFE77B;
+    --Primary-50: #FFF1B2;
+    --Secondary-100: #5CDBD9;
+    --Secondary-75: #86E4E3;
+    --Secondary-50: #B0EDED;
+    --Tertiary-100: #2426CB;
+    --Tertiary-75: #4748DE;
+    --Tertiary-50: #7071E5;
+    --Neutral-100: #1E2328;
+    --Neutral-75: #3D4751;
+    --Neutral-50: #9A9D98;
+    --Neutral-25: #F6F2DE;
+    --Neutral-0: #FFFBE6;
+    --Heading-hero-size: 64px;
+    --Heading-medium-size: 36px;
+    --Heading-small-size: 24px;
+    --body-regular-size: 16px;
+    --body-small-size: 14px;
+}
 
 *, *::after, *::before{
     box-sizing: border-box;
 }
 
 body {
+    font-family: "Source Sans 3", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--Neutral-0);
 }
