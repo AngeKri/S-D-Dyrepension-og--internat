@@ -34,5 +34,8 @@ body {
     margin: 0 auto;
     padding: 0;
     background-color: var(--Neutral-0);
+}
+
+main{
     max-width: 1440px;
 }
