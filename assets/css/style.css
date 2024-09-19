@@ -1,42 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-/* font-family: "Outfit", sans-serif; */
-/* font-family: "Source Sans 3", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 /* Variabler */
-:root{
-    --Primary-100: #FFDE47;
-    --Primary-75: #FFE77B;
-    --Primary-50: #FFF1B2;
-    --Secondary-100: #5CDBD9;
-    --Secondary-75: #86E4E3;
-    --Secondary-50: #B0EDED;
-    --Tertiary-100: #2426CB;
-    --Tertiary-75: #4748DE;
-    --Tertiary-50: #7071E5;
-    --Neutral-100: #1E2328;
-    --Neutral-75: #3D4751;
-    --Neutral-50: #9A9D98;
-    --Neutral-25: #F6F2DE;
-    --Neutral-0: #FFFBE6;
-    --Heading-hero-size: 64px;
-    --Heading-medium-size: 36px;
-    --Heading-small-size: 24px;
-    --body-regular-size: 16px;
-    --body-small-size: 14px;
-    --screen-width: 1440px
+:root {
+  --Primary-100: #ffde47;
+  --Primary-75: #ffe77b;
+  --Primary-50: #fff1b2;
+  --Secondary-100: #5cdbd9;
+  --Secondary-75: #86e4e3;
+  --Secondary-50: #b0eded;
+  --Tertiary-100: #2426cb;
+  --Tertiary-75: #4748de;
+  --Tertiary-50: #7071e5;
+  --Neutral-100: #1e2328;
+  --Neutral-75: #3d4751;
+  --Neutral-50: #9a9d98;
+  --Neutral-25: #f6f2de;
+  --Neutral-0: #fffbe6;
+  --Heading-hero-size: 64px;
+  --Heading-medium-size: 36px;
+  --Heading-small-size: 24px;
+  --body-regular-size: 16px;
+  --body-small-size: 14px;
+  --screen-width: 1440px;
 }
 
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Source Sans 3", sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    background-color: var(--Neutral-0);
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--Neutral-0);
 }
 
-main{
-    max-width: var(--screen-width);
+main {
+  max-width: var(--screen-width);
+}
+
+/* Nyheder container */
+.nyheder {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nyheder h2 {
+  margin: 0px;
+  font-size: var(--Heading-hero-size);
+}
+
+.nyheder h3 {
+  margin: 0px;
+  font-size: var(--Heading-medium-size);
+}
+
+.nyheder button {
+  color: var(--Neutral-0);
+  font-weight: bold;
+  background-color: var(--Neutral-100);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.nyheder button:hover {
+  background-color: var(--Neutral-75);
+}
+
+/* Fremhævet artikel */
+.fremhævetArtikel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px;
+  background-color: var(--Neutral-25);
+}
+
+.fremhævetArtikel img {
+  width: 500px;
+  height: 477px;
+  object-fit: cover;
+}
+
+.forfatterDato {
+  color: var(--Neutral-50);
+  font-weight: bold;
+}
+
+/* Artikler */
+
+.artikel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px;
+  background-color: var(--Primary-50);
+  max-height: 600px;
+}
+
+.artikel img {
+  width: 450px;
+  height: 359px;
+  object-fit: cover;
+}
+
+.artikel2 {
+  background-color: var(--Neutral-25);
+}
+
+.artikelIndhold {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 80px;
+}
+
+.forfatterDato {
+  color: var(--Neutral-50);
+  font-weight: bold;
+}
+
+button.læsHeleArtiklen {
+  align-self: flex-start;
+}
+
+.indlæsFlereArtikler {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Ekspert anbefalinger */
+.eksperterAnbefalerSektion {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: var(--bg-color-light);
+}
+.anbefalinger {
+  width: 48%;
+  background-color: var(--Neutral-25);
+  padding: 20px;
+}
+.anbefalinger img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
