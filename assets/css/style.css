@@ -23,7 +23,7 @@
     --Heading-small-size: 24px;
     --body-regular-size: 16px;
     --body-small-size: 14px;
-    --screen-width: 1440px
+    --screen-width: 1200px
 }
 
 *, *::after, *::before{
@@ -32,13 +32,14 @@
 
 body {
     font-family: "Source Sans 3", sans-serif;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     background-color: var(--Neutral-0);
 }
 
 main{
     max-width: var(--screen-width);
+    margin: 0 auto;
 }
 
 /*===============================================================================================
@@ -52,7 +53,6 @@ main{
     font-size: var(--Heading-small-size);
     font-weight: 900;
     text-decoration: none;
-    
 }
 
 .logo a span{
@@ -76,7 +76,6 @@ header nav{
     align-items: center;
     max-width: var(--screen-width);
     margin: auto;
-    padding: 0 1rem;
 }
 
 .userIcon img{
@@ -105,12 +104,23 @@ header nav{
     FOOTER STYLING 
 ===============================================================================================*/
 
+footer{
+    max-width: 1920px;
+}
 
-
-.furSVG img{
+.furSVG{
+    height: 500px;
+    width: 100%;
     position: absolute;
     z-index: -1;
+}
+
+.furSVG img{
     transform: rotate(180deg);
+    
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 footer section{
@@ -119,7 +129,7 @@ footer section{
     /* align-items: center; */
     max-width: var(--screen-width);
     margin: auto;
-    padding: 12rem 1rem 0 1rem;
+    padding: 13rem 1rem 0 0;
 }
 
 .footerText{
@@ -127,10 +137,6 @@ footer section{
     position: relative;
     display: flex;
     gap: 6.8rem;
-}
-
-.footerText, .logo{
-    background-color: var(--Primary-75);
 }
 
 .footerText ul{
