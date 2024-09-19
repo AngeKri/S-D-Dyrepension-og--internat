@@ -41,9 +41,27 @@ main{
     max-width: var(--screen-width);
 }
 
-/*=================================================================
+/*===============================================================================================
+    LOGO STYLING 
+===============================================================================================*/
+
+.logo a{
+    color: var(--Neutral-100);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--Heading-small-size);
+    font-weight: 900;
+    text-decoration: none;
+    
+}
+
+.logo a span{
+    font-size: var(--Heading-medium-size);
+}
+
+/*===============================================================================================
     HEADER + NAV STYLING 
-=================================================================*/
+===============================================================================================*/
  
 header{
     text-decoration: none;
@@ -59,20 +77,6 @@ header nav{
     max-width: var(--screen-width);
     margin: auto;
     padding: 0 1rem;
-}
-
-nav div:first-of-type a{
-    color: var(--Neutral-100);
-    display: flex;
-    flex-direction: column;
-    font-size: var(--Heading-small-size);
-    font-weight: 900;
-    text-decoration: none;
-    
-}
-
-nav div:first-of-type a span{
-    font-size: var(--Heading-medium-size);
 }
 
 .userIcon img{
@@ -96,3 +100,41 @@ nav div:first-of-type a span{
     text-decoration: none;
     font-size: var(--Heading-small-size);
 }
+
+/*===============================================================================================
+    FOOTER STYLING 
+===============================================================================================*/
+
+
+
+.furSVG img{
+    position: absolute;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+footer section{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    max-width: var(--screen-width);
+    margin: auto;
+    padding: 12rem 1rem 0 1rem;
+}
+
+.footerText{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    gap: 6.8rem;
+}
+
+.footerText ul{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    flex-direction: column;
+}
+
+
+
