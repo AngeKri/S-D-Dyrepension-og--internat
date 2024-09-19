@@ -100,6 +100,37 @@ header nav{
     font-size: var(--Heading-small-size);
 }
 
+.dropdown{
+    position: relative;
+}
+
+.dropdownBtn{
+    background-color: var(--Primary-75);
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdownContent {
+    display: none;
+    margin-left: -3rem;
+    position: absolute;
+    padding: 1rem;
+    background-color: var(--Primary-50);
+    /* min-width: 10rem; */
+    box-shadow: 10px 10px 10px -10px var(--Neutral-75);
+    z-index: 1;
+    text-align: center;
+}
+
+.show {
+    display:block;
+}
+
+
+
+
+
 /*===============================================================================================
     FOOTER STYLING 
 ===============================================================================================*/
@@ -126,7 +157,6 @@ footer{
 footer section{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     max-width: var(--screen-width);
     margin: auto;
     padding: 13rem 1rem 0 0;
@@ -136,7 +166,7 @@ footer section{
     z-index: 1;
     position: relative;
     display: flex;
-    gap: 6.8rem;
+    gap: 5rem;
 }
 
 .footerText ul{
@@ -144,6 +174,24 @@ footer section{
     gap: 2.5rem;
     list-style: none;
     flex-direction: column;
+}
+
+.footerText img{
+    height: var(--Heading-small-size);
+    padding: 0 .5rem;
+}
+
+.footerText li:first-child{
+    font-weight: 700;
+}
+
+.footerText li a{
+    display: flex;
+    color: var(--Neutral-100);
+    text-decoration: none;
+    font-size: var(--body-regular-size);
+    align-items: center;
+
 }
 
 

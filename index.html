@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/userLogin.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="#">
     <title>Title</title>
 </head>
@@ -23,11 +24,17 @@
                     <li><a href="#">Træning</a></li>
                     <li><a href="#">Tips & Tricks</a></li>
                     <li><a href="#">Historier</a></li>
-                    <li><a href="">
-                        <div class="userIcon">
+                    <li class="dropdown">
+                        <button  class="dropdownBtn">
+                            <div class="userIcon">
                             <img src="./assets/img/user-solid (1).svg" alt="">
+                            </div>
+                        </button>
+                        <div class="dropdownContent">
+                            <a href="#">PROFILE</a>
+                            <a href="#">LOGOUT</a>
                         </div>
-                    </a></li>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -66,9 +73,9 @@
                 </ul>
                 <ul>
                     <li>Kontakt</li>
-                    <li><a href="#"><img src="" alt=""> SejrDavidsen@mail.com</a></li>
-                    <li><a href="#"><img src="" alt=""> SejrDavidsenInternat</a></li>
-                    <li><a href="#"><img src="" alt=""> Sejr Davidsen Internat</a></li>
+                    <li><a href="mailto:SejrDavidsen@mail.com"><img src="./assets/img/envelope-solid.svg" alt=""> SejrDavidsen@mail.com</a></li>
+                    <li><a href="#"><img src="./assets/img/instagram-brands-solid.svg" alt=""> SejrDavidsenInternat</a></li>
+                    <li><a href="#"><img src="./assets/img/square-facebook-brands-solid.svg" alt=""> Sejr Davidsen Internat</a></li>
                 </ul>
             </div>
         </section>
