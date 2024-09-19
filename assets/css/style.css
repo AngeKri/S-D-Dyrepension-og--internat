@@ -23,6 +23,7 @@
     --Heading-small-size: 24px;
     --body-regular-size: 16px;
     --body-small-size: 14px;
+    --screen-width: 1440px
 }
 
 *, *::after, *::before{
@@ -31,29 +32,67 @@
 
 body {
     font-family: "Source Sans 3", sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: var(--Neutral-0);
 }
 
+main{
+    max-width: var(--screen-width);
+}
+
+/*=================================================================
+    HEADER + NAV STYLING 
+=================================================================*/
+ 
 header{
+    text-decoration: none;
     background-color: var(--Primary-75);
+    font-family: "Outfit", sans-serif;
+    padding: 1rem;
+}
+
+header nav{
     display: flex;
     justify-content: space-between;
-    font-family: "Outfit", sans-serif;
+    align-items: center;
+    max-width: var(--screen-width);
+    margin: auto;
+    padding: 0 1rem;
+}
+
+nav div:first-of-type a{
+    color: var(--Neutral-100);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--Heading-small-size);
+    font-weight: 900;
+    text-decoration: none;
+    
+}
+
+nav div:first-of-type a span{
+    font-size: var(--Heading-medium-size);
 }
 
 .userIcon img{
-    height: 1rem;
+    height: var(--Heading-medium-size);
+    padding: 0 2rem;
 }
 
-nav ul{
+.navBar ul{
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
     list-style: none;
 } 
 
-nav li{
+.navBar li{
+    align-content: center;
+}
+
+.navBar li a{
+    color: var(--Neutral-100);
+    font-weight: 500;
     text-decoration: none;
-    
+    font-size: var(--Heading-small-size);
 }
