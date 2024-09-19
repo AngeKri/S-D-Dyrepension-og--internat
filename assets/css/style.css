@@ -129,6 +129,10 @@ footer section{
     gap: 6.8rem;
 }
 
+.footerText, .logo{
+    background-color: var(--Primary-75);
+}
+
 .footerText ul{
     display: flex;
     gap: 2.5rem;
