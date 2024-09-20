@@ -196,3 +196,32 @@ footer section{
 
 
 
+/*===============================================================================================
+    FOOTER STYLING 
+===============================================================================================*/
+
+.brugerBaggrund, .brugerInfo{
+  background-color: var(--Neutral-25);
+}
+
+.brugerInfo{
+  display: flex;
+}
+
+.brugerInfo img{
+  border-radius: 50%;
+}
+
+.brugerInfo p:first-child{
+  font-size: var(--Heading-medium-size);
+  font-weight: 700;
+}
+
+.brugerInfo p:nth-child(2){
+  font-size: var(--body-small-size);
+}
+
+.brugerInfo p:nth-child(2) span{
+  font-weight: 700;
+}
+
