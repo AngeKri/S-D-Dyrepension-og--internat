@@ -41,24 +41,15 @@ main {
   max-width: var(--screen-width);
   margin: 0 auto;
 }
-
-/*HISTORIE BEGYNDER*/
-/* Nyheder container */
-.nyheder h2 {
-  font-size: var(--Heading-hero-size);
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-
-.nyheder h3 {
+/* Nyheder */
+main h3 {
   font-size: var(--Heading-medium-size);
-  margin-top: 0;
-  margin-bottom: 2rem;
 }
-
+main h2 {
+  font-size: var(--Heading-hero-size);
+}
 .nyheder button {
   color: var(--Neutral-0);
-  font-weight: bold;
   background-color: var(--Neutral-100);
   padding: 0.6rem 1.2rem;
   border: none;
@@ -70,7 +61,6 @@ main {
   background-color: var(--Neutral-75);
 }
 
-/* Fremhævet artikel */
 .fremhævetArtikel {
   display: flex;
   flex-direction: row-reverse;
@@ -84,25 +74,19 @@ main {
   height: 30rem;
   object-fit: cover;
 }
+
 .artikelIndholdFremhævet {
   margin-right: 3.75rem;
 }
-
-.forfatterDato {
-  color: var(--Neutral-50);
-  font-weight: bold;
+.artikelIndhold h2, h3 {
+  margin-top: 0;
 }
-.fa-solid {
-  margin-right: 0.5rem;
-}
-/* Artikler */
 
 .artikel {
   display: flex;
   flex-direction: row-reverse;
   padding: 2.5rem;
   background-color: var(--Primary-50);
-  max-height: 37.5rem;
   margin: 3.75rem 0;
 }
 
@@ -112,26 +96,12 @@ main {
   object-fit: cover;
 }
 
-.artikel2 {
-  background-color: var(--Neutral-25);
-}
-
-.artikelIndhold {
-  display: flex;
-  flex-direction: column;
-}
-
 .artikelIndholdSmall {
   margin-right: 12.5rem;
 }
 
-.forfatterDato {
-  color: var(--Neutral-50);
-  font-weight: bold;
-}
-
-button.læsHeleArtiklen {
-  align-self: flex-start;
+.artikel2 {
+  background-color: var(--Neutral-25);
 }
 
 .indlæsFlereArtikler {
@@ -140,22 +110,32 @@ button.læsHeleArtiklen {
   margin-bottom: 6.25rem;
 }
 
+/* Font Awesome Ikoner */
+.forfatterDato {
+  color: var(--Neutral-50);
+  font-weight: bold;
+}
+
+.fa-solid {
+  margin-right: 0.5rem;
+}
+
 /* Ekspert anbefalinger */
 .eksperterAnbefalerSektion {
   display: flex;
   justify-content: space-between;
   padding: 2.5rem;
-  background-color: var(--bg-color-light);
   margin: 3.75rem 0;
 }
+
 .anbefalinger {
   width: 48%;
   background-color: var(--Neutral-25);
   padding: 1.25rem;
 }
+
 .anbefalinger img {
   height: 18.75rem;
   width: 100%;
   object-fit: cover;
 }
-/*HISTORIE SLUTTER*/
