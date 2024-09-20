@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/brugerSlider.js" defer></script>
     <script src="./assets/js/userLogin.js" defer></script>
     <title>Min Profil - Sejr & Davidsens Dyrepension og -internat</title>
 </head>
@@ -47,7 +47,9 @@
                 <p>Eva Nielsen</p>
                 <p>Profil oprettet <span>05/03/2024</span></p>
                 <p>
-                    Stolt mor af 2 dejlige børn og gift med en dejlig mand i 16 år 💍<br>
+                    Stolt mor af 2 dejlige børn og gift med en dejlig mand i 16 år 💍
+                </p>
+                <p>
                     På udkig efter en sød og dejlig hund, der kan stå vagt og lære de små at passe på den 🐶
                 </p>
             </div>
@@ -55,83 +57,93 @@
                 <ul>
                     <li>Kontakt information</li>
                     <li>Email: <br><a href="mailto:EvaNielsen@outlook.dk">EvaNielsen@outlook.dk</a></li>
-                    <li>Tlf: <br>+45 00 00 00 00</li>
+                    <li>Tlf: <br><span>+45 00 00 00 00</span></li>
                 </ul>
                 <button>Rediger</button>
                 <button>Log ud</button>
             </div>
         </section>
-        <section class="brugerBaggrund">
-            <div>
-                <p>Gemte hunde</p>
-                <div class="scroll-container">
-                    <div class="hundGemt">
-                        <img src="https://placehold.co/600x400" alt="">
-                        <p>Kenneth</p>
-                        <p>Golden Retriever</p>
-                        <ul>
-                            <li>Han</li>
-                            <li>2 år</li>
-                        </ul>
-                    </div>
-                    <div class="hundGemt">
-                        <img src="https://placehold.co/600x400" alt="">
-                        <p>Bella</p>
-                        <p>King Charles Spaniel (Mix)</p>
-                        <ul>
-                            <li>Hun</li>
-                            <li>5 år</li>
-                        </ul>
-                    </div>
-                    <div class="hundGemt">
-                        <img src="https://placehold.co/600x400" alt="">
-                        <p>Manfred</p>
-                        <p>Gadekrys</p>
-                        <ul>
-                            <li>Han</li>
-                            <li>7 år</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p>Likede tips og tricks</p>
-                <div class="scroll-container">
-                    <div class="tipGemt">
-                        <img src="https://placehold.co/600x400" alt="">
-                        <p>Sådan undgår du stress hos din hund</p>
-                        <ul>
-                            <li>Hundeelsker72</li>
-                            <li>12/05/2024</li>
-                        </ul>
-                        <p>Det kan være svært at håndtere en stresset hund, men der er flere metoder, der kan hjælpe med at berolige den.</p>
-                    </div>
-                    <div class="tipGemt">
-                        <img src="https://placehold.co/600x400" alt="">
-                        <p>Sund kost til din hund - nemt og hurtigt </p>
-                        <ul>
-                            <li>DyrlægeLise</li>
-                            <li>06/03/2023</li>
-                        </ul>
-                        <p> I dette tip får du indsigt i, hvilke ingredienser du skal kigge efter, når du vælger hundemad</p>
-                    </div>
-                    <div class="tipGemt">
-                        <img src="https://placehold.co/600x400" alt="">
-                        <p>Aktivering af din hund indendørs</p>
-                        <ul>
-                            <li>AktivHundeMor</li>
-                            <li>13/02/2024</li>
-                        </ul>
-                        <p>På kolde eller regnfulde dage kan det være svært at få din hund aktiveret udendørs. Her får du tips til, hvordan du kan holde din hund  stimuleret og fysisk aktiv,</p>
+        <article class="brugerContent">
+            <section class="brugerBaggrund">
+                <p class="brugerTitle">Gemte hunde</p>
+                <div class="hundeContainer">
+                    <div class="scroll-container">
+                        <div class="hundGemt">
+                            <img src="https://placehold.co/600x400" alt="">
+                            <p>Kenneth</p>
+                            <p>Golden Retriever</p>
+                            <ul>
+                                <li>Han</li>
+                                <li>2 år</li>
+                            </ul>
+                        </div>
+                        <div class="hundGemt">
+                            <img src="https://placehold.co/600x400" alt="">
+                            <p>Bella</p>
+                            <p>King Charles Spaniel (Mix)</p>
+                            <ul>
+                                <li>Hun</li>
+                                <li>5 år</li>
+                            </ul>
+                        </div>
+                        <div class="hundGemt">
+                            <img src="https://placehold.co/600x400" alt="">
+                            <p>Manfred</p>
+                            <p>Gadekrys</p>
+                            <ul>
+                                <li>Han</li>
+                                <li>7 år</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="brugerBaggrund">
-            <p>Opslag</p>
-            <p>Ingen opslag</p>
-            <p>Del din første historie <a href="#">her</a></p>
-        </section>
+                <p class="brugerTitle">Likede tips og tricks</p>
+                <div>
+                    <div class="scroll-container">
+                        <div class="tipGemt">
+                            <img class="tipGemtImg" src="https://placehold.co/400x600" alt="">
+                            <div>
+                                <p>Sådan undgår du stress hos din hund</p>
+                                <ul>
+                                    <li>Hundeelsker72</li>
+                                    <li>12/05/2024</li>
+                                </ul>
+                                <p>Det kan være svært at håndtere en stresset hund, men der er flere metoder, der kan hjælpe med at berolige den.</p>
+                            </div>
+                        </div>
+                        <div class="tipGemt">
+                            <img src="https://placehold.co/400x600" alt="">
+                            <div>
+                                <p>Sund kost til din hund - nemt og hurtigt </p>
+                                <ul>
+                                    <li>DyrlægeLise</li>
+                                    <li>06/03/2023</li>
+                                </ul>
+                                <p> I dette tip får du indsigt i, hvilke ingredienser du skal kigge efter, når du vælger hundemad</p>
+                            </div>
+                        </div>
+                        <div class="tipGemt">
+                            <img src="https://placehold.co/400x600" alt="">
+                            <div>
+                                <p>Aktivering af din hund indendørs</p>
+                                <ul>
+                                    <li>AktivHundeMor</li>
+                                    <li>13/02/2024</li>
+                                </ul>
+                                <p>På kolde eller regnfulde dage kan det være svært at få din hund aktiveret udendørs. Her får du tips til...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="brugerBaggrund">
+                <p class="brugerTitle">Opslag</p>
+                <div class="brugerOpslagText">
+                    <p>Ingen opslag</p>
+                    <p>Del din første historie <a href="#">her</a></p>
+                </div>
+            </section>
+        </article>
     </main>
     <footer>
         <div class="furSVG">

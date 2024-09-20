@@ -197,31 +197,220 @@ footer section{
 
 
 /*===============================================================================================
-    FOOTER STYLING 
+BURGER PROFIL STYLING 
 ===============================================================================================*/
 
 .brugerBaggrund, .brugerInfo{
   background-color: var(--Neutral-25);
 }
 
+.brugerBaggrund{
+  padding: 0 1rem;
+  width: 45rem;
+}
+
+section .scroll-container{
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-color: var(--Neutral-50) var(--Neutral-25);
+}
+
+.brugerContent{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .brugerInfo{
   display: flex;
+  gap: 2rem;
+  padding: 2rem 5rem;
+  margin: 1rem 0;
 }
 
 .brugerInfo img{
   border-radius: 50%;
+  height: 16rem;
 }
 
 .brugerInfo p:first-child{
+  font-family: "Outfit", sans-serif;
   font-size: var(--Heading-medium-size);
   font-weight: 700;
+  margin: 0;
+}
+
+.brugerInfo div:nth-child(2){
+  width: 22rem;
 }
 
 .brugerInfo p:nth-child(2){
   font-size: var(--body-small-size);
+  margin-top: 0;
 }
 
 .brugerInfo p:nth-child(2) span{
   font-weight: 700;
 }
+
+.brugerInfo ul{
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+}
+
+.brugerInfo li:first-child{
+  font-family: "Outfit", sans-serif;
+  font-size: var(--Heading-small-size);
+  padding-bottom: .5rem;
+}
+
+.brugerInfo li{
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+
+.brugerInfo li a, .brugerInfo li span{
+  font-weight: 400;
+}
+
+.brugerInfo button{
+  font-family: "Source Sans 3", sans-serif;
+  background-color: black;
+  color: var(--Neutral-0);
+  border: none;
+  font-size: var(--Heading-small-size);
+  padding: .5rem 2.5rem;
+  margin: 2rem 1rem 0 0;
+}
+
+.brugerTitle{
+  font-family: "Outfit", sans-serif;
+  font-size: var(--Heading-medium-size);
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+.brugerTitle+div{
+  padding-bottom: 2rem;
+}
+
+.hundGemt{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.hundGemt{
+  padding: 0rem;
+  margin-right: 1rem;
+  background-color: #F2EACA;
+}
+
+.hundGemt p{
+  margin: 0;
+  text-align: center;
+}
+
+.hundGemt p:first-of-type{
+  font-family: "Outfit", sans-serif;
+  margin: .5rem 0 0 0;
+  font-size: var(--Heading-small-size);
+  font-weight: 700;
+  text-align: center;
+}
+
+.hundGemt img{
+  height: 12.5rem;
+  width: 100%;
+}
+
+.hundGemt ul{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: .5rem;
+}
+
+.tipGemt{
+  display: inline-flex;
+  align-items: center;
+  width: 25rem;
+  height: 12rem;
+  background-color: #F2EACA;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.tipGemt img{
+  height: 10rem;
+  width: 8rem;
+  object-fit: cover;
+}
+
+.tipGemt div{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+.tipGemt p{
+  text-wrap: wrap;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding-bottom: .5rem;
+}
+
+.tipGemt p:first-child{
+  font-family: "Outfit", sans-serif;
+  font-size: var(--body-regular-size);
+  font-weight: 700;
+}
+
+.tipGemt ul{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0 0 .5rem 0;
+  margin: 0;
+}
+
+.tipGemt li:first-child{
+  font-family: "Outfit", sans-serif;
+  font-size: var(--body-small-size);
+  font-weight: 500;
+}
+
+.tipGemt li:last-child{
+  font-family: "Outfit", sans-serif;
+  font-size: var(--body-small-size);
+  font-weight: 300;
+}
+
+.brugerOpslagText{
+  margin: auto;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.brugerOpslagText p{
+  margin: .5rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
