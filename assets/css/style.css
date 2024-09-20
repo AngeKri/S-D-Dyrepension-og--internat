@@ -1,42 +1,270 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 /* font-family: "Outfit", sans-serif; */
 /* font-family: "Source Sans 3", sans-serif; */
 
 /* Variabler */
-:root{
-    --Primary-100: #FFDE47;
-    --Primary-75: #FFE77B;
-    --Primary-50: #FFF1B2;
-    --Secondary-100: #5CDBD9;
-    --Secondary-75: #86E4E3;
-    --Secondary-50: #B0EDED;
-    --Tertiary-100: #2426CB;
-    --Tertiary-75: #4748DE;
-    --Tertiary-50: #7071E5;
-    --Neutral-100: #1E2328;
-    --Neutral-75: #3D4751;
-    --Neutral-50: #9A9D98;
-    --Neutral-25: #F6F2DE;
-    --Neutral-0: #FFFBE6;
-    --Heading-hero-size: 64px;
-    --Heading-medium-size: 36px;
-    --Heading-small-size: 24px;
-    --body-regular-size: 16px;
-    --body-small-size: 14px;
-    --screen-width: 1440px
+:root {
+  --Primary-100: #ffde47;
+  --Primary-75: #ffe77b;
+  --Primary-50: #fff1b2;
+  --Secondary-100: #5cdbd9;
+  --Secondary-75: #86e4e3;
+  --Secondary-50: #b0eded;
+  --Tertiary-100: #2426cb;
+  --Tertiary-75: #4748de;
+  --Tertiary-50: #7071e5;
+  --Neutral-100: #1e2328;
+  --Neutral-75: #3d4751;
+  --Neutral-50: #9a9d98;
+  --Neutral-25: #f6f2de;
+  --Neutral-0: #fffbe6;
+  --Heading-hero-size: 64px;
+  --Heading-medium-size: 36px;
+  --Heading-small-size: 24px;
+  --body-regular-size: 16px;
+  --body-small-size: 14px;
+  --screen-width: 1200px;
 }
 
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Source Sans 3", sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    background-color: var(--Neutral-0);
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--Neutral-0);
 }
 
-main{
-    max-width: var(--screen-width);
+main {
+  max-width: var(--screen-width);
+}
+
+/*TIPS OG TRICKS STARTER*/
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  margin-bottom: 0.625rem;
+  font-size: var(--Heading-hero-size);
+}
+
+header p {
+  max-width: 50rem;
+  margin: 0 auto;
+  font-size: var(--Heading-small-size);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+/*Øverste tips sektion*/
+.tipsSektion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.tip {
+  background-color: var(--Primary-50);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.tip img {
+  width: 14rem;
+  height: 10rem;
+  margin-right: 1rem;
+}
+
+.tipIndhold {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+}
+
+.tipIndhold h2,
+.tipIndhold p {
+  margin: 0;
+  margin-right: 3rem;
+}
+
+.tipIndhold span {
+  background-color: var(--Primary-100);
+  padding: 0.3rem 0.6rem;
+  border-radius: 50%;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tipIndhold i.fa-heart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 0.2rem;
+  font-size: 1.8rem;
+}
+
+.tip {
+  position: relative;
+}
+
+button.seAlle {
+  color: var(--Neutral-0);
+  background-color: var(--Neutral-100);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin: 1.5rem auto 0;
+  display: block;
+}
+
+button.seAlle:hover {
+  background-color: var(--Neutral-75);
+}
+
+/*Brand anbefaler*/
+.brandSektion {
+  margin-bottom: 2.5rem;
+}
+
+.brandSektion h2 {
+  font-size: var(--Heading-medium-size);
+  margin-bottom: 2rem;
+}
+
+.brandContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.brandCard {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--Primary-50);
+  padding: 1.5rem;
+}
+
+.brandCard img {
+  margin-right: 1.5rem;
+  width: 40rem;
+}
+
+.brandIndhold h3 {
+  font-size: var(--Heading-medium-size);
+  margin: 0 0 0.625rem;
+}
+
+.brandIndhold p {
+  font-size: var(--Heading-small-size);
+  font-weight: 400;
+}
+.brandIndhold i.fa-heart {
+  font-size: 1.8rem;
+  align-self: flex-end;
+}
+
+/*Produktsektion nederst*/
+.produktSektion {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 2.5rem 0 4.5rem;
+}
+
+.produktCard {
+  background-color: var(--Primary-50);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.lilleCard {
+  width: 30%;
+}
+
+.stortCard {
+  width: 40%;
+  height: 125%;
+}
+
+.produktCard img {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.stortCard img {
+  height: 20rem;
+}
+
+.produktIndhold h3 {
+  font-size: var(--Heading-small-size);
+  margin-bottom: 0.625rem;
+}
+
+.produktIndhold p {
+  font-size: var(--body-regular-size);
+  margin-bottom: 1.25rem;
+}
+
+.købKnap {
+  color: var(--Neutral-0);
+  background-color: var(--Neutral-100);
+  padding: 0.625rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.købKnap:hover {
+  background-color: var(--Neutral-75);
+}
+
+.produktIndhold {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.produktTekstOgKnap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.carouselPrikker {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.prik {
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+  background-color: var(--Neutral-50);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.prik.active {
+  background-color: var(--Neutral-100);
 }
