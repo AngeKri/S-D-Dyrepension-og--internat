@@ -40,3 +40,8 @@ body {
 main{
     max-width: var(--screen-width);
 }
+.dog-card {
+    background-color: var(--Neutral-25);
+    max-width: 30vw;
+    margin: auto;
+}
