@@ -4,42 +4,42 @@
 
 /* Variabler */
 :root{
-    --Primary-100: #FFDE47;
-    --Primary-75: #FFE77B;
-    --Primary-50: #FFF1B2;
-    --Secondary-100: #5CDBD9;
-    --Secondary-75: #86E4E3;
-    --Secondary-50: #B0EDED;
-    --Tertiary-100: #2426CB;
-    --Tertiary-75: #4748DE;
-    --Tertiary-50: #7071E5;
-    --Neutral-100: #1E2328;
-    --Neutral-75: #3D4751;
-    --Neutral-50: #9A9D98;
-    --Neutral-25: #F6F2DE;
-    --Neutral-0: #FFFBE6;
-    --Heading-hero-size: 64px;
-    --Heading-medium-size: 36px;
-    --Heading-small-size: 24px;
-    --body-regular-size: 16px;
-    --body-small-size: 14px;
-    --screen-width: 1200px
+  --Primary-100: #FFDE47;
+  --Primary-75: #FFE77B;
+  --Primary-50: #FFF1B2;
+  --Secondary-100: #5CDBD9;
+  --Secondary-75: #86E4E3;
+  --Secondary-50: #B0EDED;
+  --Tertiary-100: #2426CB;
+  --Tertiary-75: #4748DE;
+  --Tertiary-50: #7071E5;
+  --Neutral-100: #1E2328;
+  --Neutral-75: #3D4751;
+  --Neutral-50: #9A9D98;
+  --Neutral-25: #F6F2DE;
+  --Neutral-0: #FFFBE6;
+  --Heading-hero-size: 64px;
+  --Heading-medium-size: 36px;
+  --Heading-small-size: 24px;
+  --body-regular-size: 16px;
+  --body-small-size: 14px;
+  --screen-width: 1200px
 }
 
 *, *::after, *::before{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Source Sans 3", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--Neutral-0);
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Neutral-0);
 }
 
 main{
-    max-width: var(--screen-width);
-    margin: 0 auto;
+  max-width: var(--screen-width);
+  margin: 0 auto;
 }
 
 /*===============================================================================================
@@ -47,16 +47,16 @@ main{
 ===============================================================================================*/
 
 .logo a{
-    color: var(--Neutral-100);
-    display: flex;
-    flex-direction: column;
-    font-size: var(--Heading-small-size);
-    font-weight: 900;
-    text-decoration: none;
+  color: var(--Neutral-100);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--Heading-small-size);
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .logo a span{
-    font-size: var(--Heading-medium-size);
+  font-size: var(--Heading-medium-size);
 }
 
 /*===============================================================================================
@@ -64,71 +64,87 @@ main{
 ===============================================================================================*/
  
 header{
-    text-decoration: none;
-    background-color: var(--Primary-75);
-    font-family: "Outfit", sans-serif;
-    padding: 1rem;
+  text-decoration: none;
+  background-color: var(--Primary-75);
+  font-family: "Outfit", sans-serif;
+  padding: 1rem;
 }
 
 header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: var(--screen-width);
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--screen-width);
+  margin: auto;
 }
 
 .userIcon img{
-    height: var(--Heading-medium-size);
-    padding: 0 2rem;
+  height: var(--Heading-medium-size);
+  padding: 0 2rem;
 }
 
 .navBar ul{
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
 } 
 
 .navBar li{
-    align-content: center;
+  align-content: center;
 }
 
 .navBar li a{
-    color: var(--Neutral-100);
-    font-weight: 500;
-    text-decoration: none;
-    font-size: var(--Heading-small-size);
+  color: var(--Neutral-100);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: var(--Heading-small-size);
+  border-bottom: solid;
+  border-width: .5rem;
+  border-color: #ffffff00;
+}
+
+#active{
+  font-weight: 800;
+  border-bottom: solid;
+  border-width: .2rem;
+  border-bottom-color: var(--Neutral-75);
+}
+
+.navBar li a:hover{
+  color: var(--Neutral-100);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: var(--Heading-small-size);
+  transition: 2ms ease-in;
+  border-bottom: solid;
+  border-bottom-color: var(--Tertiary-75);
 }
 
 .dropdown{
-    position: relative;
+  position: relative;
 }
 
 .dropdownBtn{
-    background-color: var(--Primary-75);
-    padding: 0;
-    border: none;
-    cursor: pointer;
+  background-color: var(--Primary-75);
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
 
 .dropdownContent {
-    display: none;
-    margin-left: -3rem;
-    position: absolute;
-    padding: 1rem;
-    background-color: var(--Primary-50);
-    /* min-width: 10rem; */
-    box-shadow: 10px 10px 10px -10px var(--Neutral-75);
-    z-index: 1;
-    text-align: center;
+  display: none;
+  margin-left: -3rem;
+  position: absolute;
+  padding: 1rem;
+  background-color: var(--Primary-50);
+  box-shadow: 10px 10px 10px -10px var(--Neutral-75);
+  z-index: 1;
+  text-align: center;
 }
 
 .show {
-    display:block;
+  display:block;
 }
-
-
-
 
 
 /*===============================================================================================
@@ -136,62 +152,60 @@ header nav{
 ===============================================================================================*/
 
 footer{
-    max-width: 1920px;
+  max-width: 1920px;
 }
 
 .furSVG{
-    height: 500px;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .furSVG img{
-    transform: rotate(180deg);
-    
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+  transform: rotate(180deg);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 footer section{
-    display: flex;
-    justify-content: space-between;
-    max-width: var(--screen-width);
-    margin: auto;
-    padding: 13rem 1rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--screen-width);
+  margin: auto;
+  padding: 13rem 1rem 0 0;
 }
 
 .footerText{
-    z-index: 1;
-    position: relative;
-    display: flex;
-    gap: 5rem;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  gap: 5rem;
 }
 
 .footerText ul{
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-    flex-direction: column;
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  flex-direction: column;
 }
 
 .footerText img{
-    height: var(--Heading-small-size);
-    padding: 0 .5rem;
+  height: var(--Heading-small-size);
+  padding: 0 .5rem;
 }
 
 .footerText li:first-child{
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .footerText li a{
-    display: flex;
-    color: var(--Neutral-100);
-    text-decoration: none;
-    font-size: var(--body-regular-size);
-    align-items: center;
-
+  display: flex;
+  color: var(--Neutral-100);
+  text-decoration: none;
+  font-size: var(--body-regular-size);
+  align-items: center;
 }
 
 
@@ -213,6 +227,21 @@ section .scroll-container{
   overflow: auto;
   white-space: nowrap;
   scrollbar-color: var(--Neutral-50) var(--Neutral-25);
+}
+
+.scroll-container a{
+  text-decoration: none;
+  color: var(--Neutral-100);
+}
+
+.scroll-container a .hundGemt img, .scroll-container a .tipGemt img{
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.scroll-container a:hover .hundGemt img, .scroll-container a:hover .tipGemt img{
+  opacity: .5;
 }
 
 .brugerContent{
@@ -282,6 +311,11 @@ section .scroll-container{
   font-size: var(--Heading-small-size);
   padding: .5rem 2.5rem;
   margin: 2rem 1rem 0 0;
+}
+
+.brugerInfo button:hover{
+  background-color: var(--Neutral-50);
+  color: black;
 }
 
 .brugerTitle{
