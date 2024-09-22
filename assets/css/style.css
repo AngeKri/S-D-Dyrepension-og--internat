@@ -770,7 +770,7 @@ button.seAlle:hover {
     ADOPTER OG LANDING STYLING 
 ===============================================================================================*/
 
-#hero {
+#hero{
   background-color: var(--Primary-75);
   height: 100vh;
   background-image: url("../img/HeroHundSupreme.png");
@@ -779,9 +779,10 @@ button.seAlle:hover {
   background-size: contain;
 }
 
-#hero div {
+#hero div{
   max-width: var(--screen-width);
   margin: 0 auto;
+
 }
 
 #hero h1 {
@@ -876,6 +877,7 @@ button.seAlle:hover {
 .stories h2 {
   margin-left: 2rem;
 }
+
 .stories button {
   color: var(--Neutral-0);
   background-color: var(--Neutral-100);
@@ -886,6 +888,7 @@ button.seAlle:hover {
   margin-bottom: 2rem;
   width: 20rem;
 }
+
 .stories button:hover {
   background-color: var(--Neutral-75);
 }
