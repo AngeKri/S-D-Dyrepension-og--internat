@@ -320,8 +320,7 @@ section .scroll-container{
 }
 
 .brugerInfo button:hover{
-  background-color: var(--Neutral-50);
-  color: black;
+  background-color: var(--Neutral-75);
 }
 
 .brugerBaggrund h3{
@@ -527,6 +526,15 @@ section .scroll-container{
 }
 
 button.seAlle {
+  color: var(--Neutral-0);
+  background-color: var(--Neutral-100);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.nyheder button {
   color: var(--Neutral-0);
   background-color: var(--Neutral-100);
   padding: 0.6rem 1.2rem;
