@@ -447,26 +447,26 @@ section .scroll-container{
 
 /*TIPS OG TRICKS STARTER*/
 
-header {
+.tipStart {
   text-align: center;
   margin-bottom: 2.5rem;
 }
 
-header h1 {
+.tipStart h1 {
   margin-bottom: 0.625rem;
   font-size: var(--Heading-hero-size);
 }
 
-header p {
+.tipStart p {
   max-width: 50rem;
   margin: 0 auto;
   font-size: var(--Heading-small-size);
 }
 
-main {
+/* main {
   margin: 0 auto;
   max-width: 75rem;
-}
+} */
 
 /*Øverste tips sektion*/
 .tipsSektion {
