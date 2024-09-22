@@ -317,7 +317,7 @@ section .scroll-container{
   margin: 2rem 1rem 0 0;
 }
 
-.brugerInfo button:hover{
+.brugerInfo button:hover, #hero button:hover{
   background-color: var(--Neutral-75);
 }
 
@@ -533,7 +533,7 @@ button.seAlle {
     HISTORIER STYLING 
 ===============================================================================================*/
 
-.nyheder button {
+.nyheder button, .landingPage button {
   color: var(--Neutral-0);
   background-color: var(--Neutral-100);
   padding: 0.6rem 1.2rem;
@@ -542,7 +542,7 @@ button.seAlle {
   margin-top: 2rem;
 }
 
-.nyheder button:hover {
+.nyheder button:hover, .landingPage button:hover {
   background-color: var(--Neutral-75);
 }
 
@@ -768,9 +768,7 @@ button.seAlle:hover {
 
 #hero{
   background-color: var(--Primary-75);
-  /* display: flex; */
   height: 100vh;
-  /* max-width: 100%; */
   background-image: url("../img/HeroHundSupreme.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -785,41 +783,73 @@ button.seAlle:hover {
 
 #hero h1 {
   margin: 0;
+  padding: 8rem 0 0 0 ;
   font-size: var(--Heading-hero-size);
 }
 
+#hero p {
+  width: 40%;
+  padding-bottom: 1rem;
+}
 
+#hero button{
+  font-family: "Source Sans 3", sans-serif;
+  background-color: black;
+  color: var(--Neutral-0);
+  border: none;
+  font-size: var(--Heading-small-size);
+  padding: .5rem 2.5rem;
+  font-weight: 600;
+}
+
+.landingPage h2{
+  font-size: var(--Heading-medium-size);
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.landingPage button{
+  margin: 2rem 0;
+}
 
 .dog-card {
   background-color: var(--Neutral-25);
   max-width: 30vw;
-  margin: auto;
+  position: relative;
+  width: 22.5rem;
 }
 
 .dog-card img {
+  height: 17rem;
   max-width: 100%;
 }
 
-.dog-card-info {
+.dog-card svg{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.dog-card-info p, .dog-card-info h3{
   text-align: center;
+  margin: 0;
 }
 
 .dog-card-info-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-inline: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: .5rem;
 }
 
-.dog-card-info-grid p {
-  margin-inline: auto;
+.dog-card-info-grid p{
+  padding: 0 1rem;
 }
 
 .dog-card-container {
   display: flex;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 80px;
-  margin: auto; */
+  gap: 1rem;
+  max-width: var(--screen-width);
+  flex-wrap: wrap;
 }
 
 .stories {
