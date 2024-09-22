@@ -85,7 +85,7 @@ header nav{
   margin: auto;
 }
 
-.userIcon img{
+.dropdownBtn img{
   height: var(--Heading-medium-size);
   padding: 0 2rem;
 }
@@ -442,9 +442,6 @@ section .scroll-container{
   text-align: center;
 }
 
-.nyheder button {
-}
-
 /*TIPS OG TRICKS STARTER*/
 
 .tipStart {
@@ -497,7 +494,7 @@ section .scroll-container{
   position: relative;
 }
 
-.tipIndhold h2,
+.tipIndhold h3,
 .tipIndhold p {
   margin: 0;
   margin-right: 3rem;
