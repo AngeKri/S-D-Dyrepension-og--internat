@@ -822,6 +822,9 @@ button.seAlle:hover {
   position: relative;
   width: 22.5rem;
 }
+.dog-card h3 {
+text-align: center;
+}
 
 .dog-card img {
   height: 17rem;
