@@ -857,6 +857,7 @@ text-align: center;
   gap: 1rem;
   max-width: var(--screen-width);
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .stories {
@@ -895,3 +896,44 @@ text-align: center;
 .stories button:hover {
   background-color: var(--Neutral-75);
 }
+
+.filterKnapperCont{
+  display: flex;
+  justify-content: center;
+}
+
+.filterKnapper{
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  font-size: var(--body-regular-size);
+  font-weight: 500;
+  color: var(--Neutral-0);
+  background-color: var(--Neutral-100);
+  padding: 0.625rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.dog-card-container button{
+  font-family: "Outfit", sans-serif;
+  font-size: var(--body-regular-size);
+  font-weight: 500;
+  color: var(--Neutral-0);
+  background-color: var(--Neutral-100);
+  padding: 0.625rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  /* margin-left: 2rem; */
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 10rem;
+
+}
+
+
