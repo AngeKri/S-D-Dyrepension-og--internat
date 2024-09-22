@@ -795,6 +795,9 @@ button.seAlle:hover {
   max-width: 30vw;
   margin: auto;
 }
+.dog-card h3 {
+text-align: center;
+}
 
 .dog-card img {
   max-width: 100%;
