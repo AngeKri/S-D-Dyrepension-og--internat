@@ -762,3 +762,47 @@ button.seAlle:hover {
 .prik.active {
   background-color: var(--Neutral-100);
 }
+/* 
+main{
+    max-width: var(--screen-width);
+} */
+.dog-card {
+    background-color: var(--Neutral-25);
+    max-width: 30vw;
+    margin: auto;
+}
+
+.dog-card img {
+    max-width: 100%;
+}
+.dog-card-info {
+    text-align: center;
+}
+.dog-card-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 6rem;
+}
+.dog-card-info-grid p {
+    margin-inline: auto;
+}
+.dog-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 80px;
+    margin: auto;
+}
+.stories {
+    background-color: var(--Primary-75);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: auto;
+}
+.stories-image img {
+    height: 100%;
+    width: 100%;
+}
+.stories p {
+    margin-block: 4rem;
+    max-width: 50%;
+}
