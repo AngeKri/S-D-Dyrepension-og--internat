@@ -45,3 +45,33 @@ main{
     max-width: 30vw;
     margin: auto;
 }
+
+.dog-card img {
+    max-width: 100%;
+}
+.dog-card-info {
+    text-align: center;
+}
+.dog-card-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 6rem;
+}
+.dog-card-info-grid p {
+    margin-inline: auto;
+}
+.dog-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 80px;
+    margin: auto;
+}
+.stories {
+    background-color: var(--Primary-75);
+    display: flex;
+    margin-inline: auto;
+    max-width: 60%;
+}
+.stories-image {
+    max-width: 45%;
+}
