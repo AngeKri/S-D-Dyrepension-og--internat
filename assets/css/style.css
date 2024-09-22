@@ -35,10 +35,19 @@ body {
   background-color: var(--Neutral-0);
 }
 
-main{
+main {
   max-width: var(--screen-width);
   margin: 0 auto;
 }
+
+main h3 {
+  font-size: var(--Heading-medium-size);
+}
+
+main h2 {
+  font-size: var(--Heading-hero-size);
+}
+
 
 /*===============================================================================================
     LOGO STYLING 
@@ -260,9 +269,8 @@ section .scroll-container{
   height: 16rem;
 }
 
-.brugerInfo p:first-child{
+.brugerInfo h3{
   font-family: "Outfit", sans-serif;
-  font-size: var(--Heading-medium-size);
   font-weight: 700;
   margin: 0;
 }
@@ -316,14 +324,13 @@ section .scroll-container{
   color: black;
 }
 
-.brugerTitle{
+.brugerBaggrund h3{
   font-family: "Outfit", sans-serif;
-  font-size: var(--Heading-medium-size);
   font-weight: 700;
   margin: 1.5rem 0;
 }
 
-.brugerTitle+div{
+.brugerBaggrund h3+div{
   padding-bottom: 2rem;
 }
 
@@ -435,17 +442,6 @@ section .scroll-container{
   text-align: center;
 }
 
-main {
-  max-width: var(--screen-width);
-  margin: 0 auto;
-}
-/* Nyheder */
-main h3 {
-  font-size: var(--Heading-medium-size);
-}
-main h2 {
-  font-size: var(--Heading-hero-size);
-}
 .nyheder button {
   color: var(--Neutral-0);
   background-color: var(--Neutral-100);
