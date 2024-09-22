@@ -68,10 +68,15 @@ main{
 }
 .stories {
     background-color: var(--Primary-75);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-inline: auto;
-    max-width: 60%;
 }
-.stories-image {
-    max-width: 45%;
+.stories-image img {
+    height: 100%;
+    width: 100%;
+}
+.stories p {
+    margin-block: 4rem;
+    max-width: 50%;
 }
