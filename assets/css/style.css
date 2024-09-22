@@ -494,7 +494,11 @@ section .scroll-container{
   position: relative;
 }
 
-.tipIndhold h3,
+.tipIndhold h4{
+  font-size: var(--Heading-small-size);
+}
+
+.tipIndhold h4,
 .tipIndhold p {
   margin: 0;
   margin-right: 3rem;
