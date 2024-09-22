@@ -6,11 +6,36 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
         <script src="./assets/js/script.js" defer></script>
         <link rel="shortcut icon" type="image/x-icon" href="#" />
+        <script src="./assets/js/userLogin.js" defer></script>
         <title>Vores hunde | Sejr & Davidsens</title>
     </head>
     <body>
         <header>
-            <p>placeholder</p>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <span>Sejr & Davidsens</span>Dyrepension og -internat
+                    </a>
+                </div>
+                <div class="navBar">
+                    <ul>
+                        <li><a id="active" href="./dogs.html">Adopter</a></li>
+                        <li><a href="#">Pension</a></li>
+                        <li><a href="#">Træning</a></li>
+                        <li><a href="./tips.html">Tips & Tricks</a></li>
+                        <li><a href="./historier.html">Historier</a></li>
+                        <li class="dropdown">
+                            <button  class="dropdownBtn">
+                                <img src="./assets/img/user-solid (1).svg" alt="">
+                            </button>
+                            <div class="dropdownContent">
+                                <a href="./Bruger.html">PROFIL </a>
+                                <a href="#">LOG UD</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <main>
             <h1>Hunde der leder efter et hjem</h1>
@@ -41,6 +66,43 @@
                 </button>
             </div>
             <div class="dog-card-container">
+                <div class="hundeContainer"></div>
+                <a href="#">
+                    <div class="hundGemt">
+                        <img src="https://placehold.co/600x400" alt="">
+                        <p>Kenneth</p>
+                        <p>Golden Retriever</p>
+                        <ul>
+                            <li>Han</li>
+                            <li>2 år</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="hundGemt">
+                        <img src="https://placehold.co/600x400" alt="">
+                        <p>Bella</p>
+                        <p>King Charles Spaniel (Mix)</p>
+                        <ul>
+                            <li>Hun</li>
+                            <li>5 år</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="hundGemt">
+                        <img src="https://placehold.co/600x400" alt="">
+                        <p>Manfred</p>
+                        <p>Gadekrys</p>
+                        <ul>
+                            <li>Han</li>
+                            <li>7 år</li>
+                        </ul>
+                    </div>
+                </a>
+                    <!-- <div class="scroll-container">
+                    </div> -->
+                </div>
                 <div class="dog-card">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +189,40 @@
             </div>
         </main>
         <footer>
-            <p>placeholder</p>
+            <div class="furSVG">
+                <img src="./assets/img/FURFOOTER.svg" alt="">
+            </div>
+            <section>
+                <div class="logo">
+                    <a href="index.html">
+                        <span>Sejr & Davidsens</span>Dyrepension og -internat
+                    </a>
+                </div>
+                <div class="footerText">
+                    <ul>
+                        <li>Ydelser</li>
+                        <li><a href="#">Adoption</a></li>
+                        <li><a href="#">Pension</a></li>
+                        <li><a href="#">Træning</a></li>
+                    </ul>
+                    <ul>
+                        <li>Blog</li>
+                        <li><a href="./historier.html">Historier</a></li>
+                        <li><a href="./tips.html">Tips & Tricks</a></li>
+                    </ul>
+                    <ul>
+                        <li>Om os</li>
+                        <li><a href="#">Historie</a></li>
+                        <li><a href="#">Medarbejder</a></li>
+                    </ul>
+                    <ul>
+                        <li>Kontakt</li>
+                        <li><a href="mailto:SejrDavidsen@mail.com"><img src="./assets/img/envelope-solid.svg" alt=""> SejrDavidsen@mail.com</a></li>
+                        <li><a href="#"><img src="./assets/img/instagram-brands-solid.svg" alt=""> SejrDavidsenInternat</a></li>
+                        <li><a href="#"><img src="./assets/img/square-facebook-brands-solid.svg" alt=""> Sejr Davidsen Internat</a></li>
+                    </ul>
+                </div>
+            </section>
         </footer>
     </body>
 </html>
