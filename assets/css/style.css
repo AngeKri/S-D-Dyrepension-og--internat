@@ -538,6 +538,8 @@ button.seAlle {
 ===============================================================================================*/
 
 .nyheder button, .landingPage button {
+  font-family: "Outfit", sans-serif;
+  font-size: var(--body-regular-size);
   color: var(--Neutral-0);
   background-color: var(--Neutral-100);
   padding: 0.6rem 1.2rem;
@@ -883,6 +885,8 @@ text-align: center;
 }
 
 .stories button {
+  font-family: "Outfit", sans-serif;
+  font-size: var(--body-regular-size);
   color: var(--Neutral-0);
   background-color: var(--Neutral-100);
   padding: 0.625rem 1.25rem;
