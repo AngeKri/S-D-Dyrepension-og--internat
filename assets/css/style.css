@@ -441,7 +441,9 @@ section .scroll-container{
   text-align: center;
 }
 
-/*TIPS OG TRICKS STARTER*/
+/*===============================================================================================
+    TIPS OG TRICKS STYLING 
+===============================================================================================*/
 
 .tipStart {
   text-align: center;
@@ -458,11 +460,6 @@ section .scroll-container{
   margin: 0 auto;
   font-size: var(--Heading-small-size);
 }
-
-/* main {
-  margin: 0 auto;
-  max-width: 75rem;
-} */
 
 /*Øverste tips sektion*/
 .tipsSektion {
@@ -534,6 +531,10 @@ button.seAlle {
   margin-top: 2rem;
 }
 
+/*===============================================================================================
+    HISTORIER STYLING 
+===============================================================================================*/
+
 .nyheder button {
   color: var(--Neutral-0);
   background-color: var(--Neutral-100);
@@ -592,8 +593,6 @@ button.seAlle {
 
 .indlæsFlereArtikler {
   text-align: center;
-  padding: 1.25rem;
-  margin-bottom: 6.25rem;
 }
 
 /* Font Awesome Ikoner */
